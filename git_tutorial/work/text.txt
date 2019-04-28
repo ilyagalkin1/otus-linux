@@ -1,77 +1,324 @@
-    1  cd /
-    2  cd etc/sysconfig/network-scripts/
-    3  ls
-    4  vi ifcfg-enp0s3 
-    5  ls
-    6  shutdown now
-    7  yum update
-    8  yum update -y
-    9  shutdown now
-   10  yum install git
-   11  ls
-   12  cd /
-   13  ls
-   14  git clone https://github.com/ilyagalkin1/otus-linux.git
-   15  git tatus
-   16  git status
-   17  cd otus-linux/
-   18  ls
-   19  git status
-   20  cd git_tutorial/
-   21  ls
-   22  cd work/
-   23  ls
-   24  git status
-   25  mv test.txt  text.txt
-   26  ls
-   27  git status
-   28  git add text.txt 
-   29  vi text.txt 
-   30  uname -r
-   31  uname -a
-   32  uname -r
-   33  uname -r echo /otus-linux/git_tutorial/work/text.txt 
-   34  echo uname -r  /otus-linux/git_tutorial/work/text.txt 
-   35  cat text.txt 
-   36  uname -r > /otus-linux/git_tutorial/work/text.txt 
-   37  cat text.txt 
-   38  uname -r > /otus-linux/git_tutorial/work/text.txt 
-   39  cat text.txt 
-   40  uname -a > /otus-linux/git_tutorial/work/text.txt 
-   41  cat text.txt 
-   42  uname -r
-   43  uname -a
-   44  cat text.txt 
-   45  vi text.txt 
-   46  cd /
-   47  cd usr/src
-   48  ls
-   49  yum install wget
-   50  wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.9.tar.xz
-   51  tar -Jxvf linux-5.0.9.tar.xz 
-   52  ln -s linux-5.0.9/ linux
-   53  ls -l
-   54  rm -r linux-5.0.9.tar.xz 
-   55  ls
-   56  rm -r linux-5.0.9.tar.xz 
-   57  ls
-   58   yum groupinstall "Development Tools"
-   59   yum groupinstall "Development Tools" -y
-   60  yum install ncurses-devel hmaccalc zlib-devel binutils-devel elfutils-libelf-devel
-   61  cd linux
-   62  ls
-   63  make mrproper
-   64  make menuconfig
-   65  make dep
-   66  yum install openssl-devel bc
-   67  make bzImage
-   68  make modules
-   69  make modules_install
-   70  make install
-   71  vi /etc/default/grub
-   72  ls
-   73  grub2-mkconfig -o /boot/grub2/grub.cfg
-   74  uname -r
-   75  reboot
-   76  history
-   77  history > /otus-linux/git_tutorial/work/text.txt 
+Apr 28 00:07:14 Updated: libgcc-4.8.5-36.el7_6.1.x86_64
+Apr 28 00:07:15 Updated: 1:grub2-common-2.02-0.76.el7.centos.1.noarch
+Apr 28 00:07:16 Updated: 1:grub2-pc-modules-2.02-0.76.el7.centos.1.noarch
+Apr 28 00:07:16 Updated: 32:bind-license-9.9.4-73.el7_6.noarch
+Apr 28 00:07:17 Updated: kbd-legacy-1.15.5-15.el7.noarch
+Apr 28 00:07:18 Updated: kbd-misc-1.15.5-15.el7.noarch
+Apr 28 00:07:21 Updated: tzdata-2019a-1.el7.noarch
+Apr 28 00:07:21 Updated: firewalld-filesystem-0.5.3-5.el7.noarch
+Apr 28 00:07:22 Updated: ncurses-base-5.9-14.20130511.el7_4.noarch
+Apr 28 00:07:33 Updated: glibc-common-2.17-260.el7_6.4.x86_64
+Apr 28 00:07:33 Updated: nss-softokn-freebl-3.36.0-5.el7_5.x86_64
+Apr 28 00:07:35 Updated: glibc-2.17-260.el7_6.4.x86_64
+Apr 28 00:07:35 Updated: nspr-4.19.0-1.el7_5.x86_64
+Apr 28 00:07:36 Updated: nss-util-3.36.0-1.1.el7_6.x86_64
+Apr 28 00:07:36 Updated: libstdc++-4.8.5-36.el7_6.1.x86_64
+Apr 28 00:07:36 Updated: ncurses-libs-5.9-14.20130511.el7_4.x86_64
+Apr 28 00:07:37 Updated: bash-4.2.46-31.el7.x86_64
+Apr 28 00:07:37 Updated: libsepol-2.5-10.el7.x86_64
+Apr 28 00:07:37 Updated: libselinux-2.5-14.1.el7.x86_64
+Apr 28 00:07:38 Updated: zlib-1.2.7-18.el7.x86_64
+Apr 28 00:07:38 Updated: audit-libs-2.8.4-4.el7.x86_64
+Apr 28 00:07:38 Updated: libcom_err-1.42.9-13.el7.x86_64
+Apr 28 00:07:38 Updated: libuuid-2.23.2-59.el7_6.1.x86_64
+Apr 28 00:07:38 Updated: libdb-5.3.21-24.el7.x86_64
+Apr 28 00:07:38 Updated: info-5.1-5.el7.x86_64
+Apr 28 00:07:38 Updated: elfutils-libelf-0.172-2.el7.x86_64
+Apr 28 00:07:39 Updated: cpio-2.11-27.el7.x86_64
+Apr 28 00:07:39 Updated: 1:findutils-4.5.11-6.el7.x86_64
+Apr 28 00:07:39 Updated: libattr-2.4.46-13.el7.x86_64
+Apr 28 00:07:39 Updated: libacl-2.2.51-14.el7.x86_64
+Apr 28 00:07:39 Updated: libsemanage-2.5-14.el7.x86_64
+Apr 28 00:07:39 Updated: file-libs-5.11-35.el7.x86_64
+Apr 28 00:07:39 Updated: file-5.11-35.el7.x86_64
+Apr 28 00:07:40 Updated: iptables-1.4.21-28.el7.x86_64
+Apr 28 00:07:40 Updated: iproute-4.11.0-14.el7.x86_64
+Apr 28 00:07:41 Updated: nss-softokn-3.36.0-5.el7_5.x86_64
+Apr 28 00:07:41 Updated: 2:ethtool-4.8-9.el7.x86_64
+Apr 28 00:07:41 Updated: pciutils-libs-3.5.1-3.el7.x86_64
+Apr 28 00:07:41 Installed: lz4-1.7.5-2.el7.x86_64
+Apr 28 00:07:41 Updated: acl-2.2.51-14.el7.x86_64
+Apr 28 00:07:41 Updated: 2:vim-minimal-7.4.160-5.el7.x86_64
+Apr 28 00:07:42 Updated: 2:tar-1.26-35.el7.x86_64
+Apr 28 00:07:42 Updated: libdb-utils-5.3.21-24.el7.x86_64
+Apr 28 00:07:42 Updated: libss-1.42.9-13.el7.x86_64
+Apr 28 00:07:42 Updated: e2fsprogs-libs-1.42.9-13.el7.x86_64
+Apr 28 00:07:42 Installed: 2:libpng-1.5.13-7.el7_2.x86_64
+Apr 28 00:07:42 Updated: freetype-2.8-12.el7_6.1.x86_64
+Apr 28 00:07:43 Updated: GeoIP-1.5.0-13.el7.x86_64
+Apr 28 00:07:43 Updated: kmod-libs-20-23.el7.x86_64
+Apr 28 00:07:43 Updated: libselinux-utils-2.5-14.1.el7.x86_64
+Apr 28 00:07:45 Updated: ca-certificates-2018.2.22-70.0.el7_5.noarch
+Apr 28 00:08:01 Updated: linux-firmware-20180911-69.git85c5d90.el7.noarch
+Apr 28 00:08:01 Updated: ncurses-5.9-14.20130511.el7_4.x86_64
+Apr 28 00:08:02 Updated: krb5-libs-1.15.1-37.el7_6.x86_64
+Apr 28 00:08:02 Updated: 1:openssl-libs-1.0.2k-16.el7_6.1.x86_64
+Apr 28 00:08:04 Updated: coreutils-8.22-23.el7.x86_64
+Apr 28 00:08:04 Updated: libpwquality-1.2.3-5.el7.x86_64
+Apr 28 00:08:08 Updated: pam-1.1.8-22.el7.x86_64
+Apr 28 00:08:11 Updated: libblkid-2.23.2-59.el7_6.1.x86_64
+Apr 28 00:08:11 Updated: centos-release-7-6.1810.2.el7.centos.x86_64
+Apr 28 00:08:11 Updated: gzip-1.5-10.el7.x86_64
+Apr 28 00:08:11 Updated: libmount-2.23.2-59.el7_6.1.x86_64
+Apr 28 00:08:12 Updated: glib2-2.56.1-2.el7.x86_64
+Apr 28 00:08:13 Updated: shared-mime-info-1.8-4.el7.x86_64
+Apr 28 00:08:18 Updated: python-libs-2.7.5-77.el7_6.x86_64
+Apr 28 00:08:18 Updated: python-2.7.5-77.el7_6.x86_64
+Apr 28 00:08:18 Updated: setup-2.8.71-10.el7.noarch
+Apr 28 00:08:19 Updated: 2:shadow-utils-4.1.5.1-25.el7_6.1.x86_64
+Apr 28 00:08:19 Updated: cyrus-sasl-lib-2.1.26-23.el7.x86_64
+Apr 28 00:08:21 Updated: filesystem-3.2-25.el7.x86_64
+Apr 28 00:08:21 Updated: python-linux-procfs-0.4.9-4.el7.noarch
+Apr 28 00:08:21 Updated: libselinux-python-2.5-14.1.el7.x86_64
+Apr 28 00:08:21 Updated: python-slip-0.4.0-4.el7.noarch
+Apr 28 00:08:21 Updated: python-slip-dbus-0.4.0-4.el7.noarch
+Apr 28 00:08:21 Updated: python-urlgrabber-3.10-9.el7.noarch
+Apr 28 00:08:22 Updated: python-perf-3.10.0-957.10.1.el7.x86_64
+Apr 28 00:08:22 Updated: gobject-introspection-1.56.1-1.el7.x86_64
+Apr 28 00:08:22 Updated: python-gobject-base-3.22.0-1.el7_4.1.x86_64
+Apr 28 00:08:23 Updated: python-firewall-0.5.3-5.el7.noarch
+Apr 28 00:08:23 Updated: grubby-8.28-25.el7.x86_64
+Apr 28 00:08:23 Updated: logrotate-3.8.6-17.el7.x86_64
+Apr 28 00:08:25 Updated: binutils-2.27-34.base.el7.x86_64
+Apr 28 00:08:25 Updated: nss-pem-1.0.3-5.el7_6.1.x86_64
+Apr 28 00:08:26 Updated: nss-3.36.0-7.1.el7_6.x86_64
+Apr 28 00:08:26 Updated: nss-sysinit-3.36.0-7.1.el7_6.x86_64
+Apr 28 00:08:26 Updated: nss-tools-3.36.0-7.1.el7_6.x86_64
+Apr 28 00:08:26 Updated: 32:bind-libs-lite-9.9.4-73.el7_6.x86_64
+Apr 28 00:08:26 Updated: libssh2-1.4.3-12.el7_6.2.x86_64
+Apr 28 00:08:27 Updated: libcurl-7.29.0-51.el7.x86_64
+Apr 28 00:08:27 Updated: curl-7.29.0-51.el7.x86_64
+Apr 28 00:08:27 Updated: rpm-libs-4.11.3-35.el7.x86_64
+Apr 28 00:08:27 Updated: rpm-4.11.3-35.el7.x86_64
+Apr 28 00:08:28 Updated: openldap-2.4.44-21.el7_6.x86_64
+Apr 28 00:08:28 Updated: libuser-0.60-9.el7.x86_64
+Apr 28 00:08:29 Updated: gnupg2-2.0.22-5.el7_5.x86_64
+Apr 28 00:08:29 Updated: rpm-build-libs-4.11.3-35.el7.x86_64
+Apr 28 00:08:29 Updated: rpm-python-4.11.3-35.el7.x86_64
+Apr 28 00:08:29 Updated: yum-plugin-fastestmirror-1.1.31-50.el7.noarch
+Apr 28 00:08:30 Updated: yum-3.4.3-161.el7.centos.noarch
+Apr 28 00:08:30 Updated: 1:mariadb-libs-5.5.60-1.el7_5.x86_64
+Apr 28 00:08:31 Updated: device-mapper-persistent-data-0.7.3-3.el7.x86_64
+Apr 28 00:08:31 Updated: mozjs17-17.0.0-20.el7.x86_64
+Apr 28 00:08:31 Installed: libsmartcols-2.23.2-59.el7_6.1.x86_64
+Apr 28 00:08:31 Updated: 1:dmidecode-3.1-2.el7.x86_64
+Apr 28 00:08:31 Updated: libfastjson-0.99.4-3.el7.x86_64
+Apr 28 00:08:32 Updated: libteam-1.27-5.el7.x86_64
+Apr 28 00:08:32 Updated: ipset-libs-6.38-3.el7_6.x86_64
+Apr 28 00:08:32 Updated: ipset-6.38-3.el7_6.x86_64
+Apr 28 00:08:32 Updated: numactl-libs-2.0.9-7.el7.x86_64
+Apr 28 00:08:32 Installed: json-c-0.11-4.el7_0.x86_64
+Apr 28 00:08:32 Updated: kpartx-0.4.9-123.el7.x86_64
+Apr 28 00:08:32 Updated: procps-ng-3.3.10-23.el7.x86_64
+Apr 28 00:08:32 Updated: 7:device-mapper-1.02.149-10.el7_6.3.x86_64
+Apr 28 00:08:33 Updated: util-linux-2.23.2-59.el7_6.1.x86_64
+Apr 28 00:08:34 Updated: dracut-033-554.el7.x86_64
+Apr 28 00:08:34 Updated: kmod-20-23.el7.x86_64
+Apr 28 00:08:34 Updated: 7:device-mapper-libs-1.02.149-10.el7_6.3.x86_64
+Apr 28 00:08:36 Updated: cryptsetup-libs-2.0.3-3.el7.x86_64
+Apr 28 00:08:36 Updated: elfutils-libs-0.172-2.el7.x86_64
+Apr 28 00:08:36 Updated: systemd-libs-219-62.el7_6.5.x86_64
+Apr 28 00:08:37 Updated: 1:dbus-libs-1.10.24-13.el7_6.x86_64
+Apr 28 00:08:41 Updated: systemd-219-62.el7_6.5.x86_64
+Apr 28 00:08:41 Updated: 1:dbus-1.10.24-13.el7_6.x86_64
+Apr 28 00:08:41 Updated: elfutils-default-yama-scope-0.172-2.el7.noarch
+Apr 28 00:08:42 Updated: initscripts-9.49.46-1.el7.x86_64
+Apr 28 00:08:42 Updated: systemd-sysv-219-62.el7_6.5.x86_64
+Apr 28 00:08:42 Installed: 1:grub2-tools-minimal-2.02-0.76.el7.centos.1.x86_64
+Apr 28 00:08:43 Updated: 7:device-mapper-event-libs-1.02.149-10.el7_6.3.x86_64
+Apr 28 00:08:43 Installed: 1:grub2-tools-2.02-0.76.el7.centos.1.x86_64
+Apr 28 00:08:44 Updated: 1:wpa_supplicant-2.6-12.el7.x86_64
+Apr 28 00:08:44 Updated: polkit-0.112-18.el7_6.1.x86_64
+Apr 28 00:08:44 Updated: 12:dhcp-libs-4.2.5-68.el7.centos.1.x86_64
+Apr 28 00:08:46 Updated: 1:NetworkManager-libnm-1.12.0-10.el7_6.x86_64
+Apr 28 00:08:47 Updated: 1:NetworkManager-1.12.0-10.el7_6.x86_64
+Apr 28 00:08:47 Updated: openssh-7.4p1-16.el7.x86_64
+Apr 28 00:08:48 Updated: policycoreutils-2.5-29.el7_6.1.x86_64
+Apr 28 00:09:05 Updated: selinux-policy-3.13.1-229.el7_6.9.noarch
+Apr 28 00:09:05 Updated: 12:dhcp-common-4.2.5-68.el7.centos.1.x86_64
+Apr 28 00:09:05 Updated: 12:dhclient-4.2.5-68.el7.centos.1.x86_64
+Apr 28 00:09:06 Updated: dracut-network-033-554.el7.x86_64
+Apr 28 00:09:07 Installed: 1:grub2-tools-extra-2.02-0.76.el7.centos.1.x86_64
+Apr 28 00:09:07 Updated: 1:grub2-pc-2.02-0.76.el7.centos.1.x86_64
+Apr 28 00:09:07 Updated: 7:device-mapper-event-1.02.149-10.el7_6.3.x86_64
+Apr 28 00:09:07 Updated: 7:lvm2-libs-2.02.180-10.el7_6.3.x86_64
+Apr 28 00:09:07 Updated: ebtables-2.0.10-16.el7.x86_64
+Apr 28 00:09:09 Updated: hwdata-0.252-9.1.el7.x86_64
+Apr 28 00:09:09 Updated: libpciaccess-0.14-1.el7.x86_64
+Apr 28 00:09:09 Updated: libdrm-2.4.91-3.el7.x86_64
+Apr 28 00:09:09 Updated: cronie-anacron-1.4.11-20.el7_6.x86_64
+Apr 28 00:09:09 Updated: cronie-1.4.11-20.el7_6.x86_64
+Apr 28 00:09:10 Updated: teamd-1.27-5.el7.x86_64
+Apr 28 00:09:10 Updated: plymouth-core-libs-0.8.9-0.31.20140113.el7.centos.x86_64
+Apr 28 00:09:10 Updated: plymouth-scripts-0.8.9-0.31.20140113.el7.centos.x86_64
+Apr 28 00:09:10 Updated: plymouth-0.8.9-0.31.20140113.el7.centos.x86_64
+Apr 28 00:09:10 Updated: virt-what-1.18-4.el7.x86_64
+Apr 28 00:09:11 Updated: kernel-tools-libs-3.10.0-957.10.1.el7.x86_64
+Apr 28 00:09:11 Updated: kernel-tools-3.10.0-957.10.1.el7.x86_64
+Apr 28 00:09:12 Updated: tuned-2.10.0-6.el7_6.3.noarch
+Apr 28 00:09:12 Updated: 1:NetworkManager-team-1.12.0-10.el7_6.x86_64
+Apr 28 00:09:13 Updated: firewalld-0.5.3-5.el7.noarch
+Apr 28 00:09:14 Updated: 7:lvm2-2.02.180-10.el7_6.3.x86_64
+Apr 28 00:09:14 Installed: 1:grub2-2.02-0.76.el7.centos.1.x86_64
+Apr 28 00:09:14 Updated: kexec-tools-2.0.15-21.el7.x86_64
+Apr 28 00:09:36 Updated: selinux-policy-targeted-3.13.1-229.el7_6.9.noarch
+Apr 28 00:09:37 Updated: openssh-clients-7.4p1-16.el7.x86_64
+Apr 28 00:09:37 Updated: openssh-server-7.4p1-16.el7.x86_64
+Apr 28 00:09:37 Updated: 1:NetworkManager-tui-1.12.0-10.el7_6.x86_64
+Apr 28 00:09:37 Updated: 1:NetworkManager-wifi-1.12.0-10.el7_6.x86_64
+Apr 28 00:09:37 Updated: audit-2.8.4-4.el7.x86_64
+Apr 28 00:09:40 Updated: 2:postfix-2.10.1-7.el7.x86_64
+Apr 28 00:09:40 Updated: kbd-1.15.5-15.el7.x86_64
+Apr 28 00:09:49 Installed: kernel-3.10.0-957.10.1.el7.x86_64
+Apr 28 00:09:49 Updated: biosdevname-0.7.3-1.el7.x86_64
+Apr 28 00:09:49 Updated: rsyslog-8.24.0-34.el7.x86_64
+Apr 28 00:09:49 Updated: 3:irqbalance-1.0.7-11.el7.x86_64
+Apr 28 00:09:50 Updated: chrony-3.2-2.el7.x86_64
+Apr 28 00:09:54 Updated: 2:microcode_ctl-2.1-47.el7.x86_64
+Apr 28 00:09:54 Updated: parted-3.1-29.el7.x86_64
+Apr 28 00:09:54 Updated: dracut-config-rescue-033-554.el7.x86_64
+Apr 28 00:09:54 Updated: sudo-1.8.23-3.el7.x86_64
+Apr 28 00:09:55 Updated: libcroco-0.6.12-4.el7.x86_64
+Apr 28 00:09:55 Updated: man-db-2.6.3-11.el7.x86_64
+Apr 28 00:09:55 Updated: e2fsprogs-1.42.9-13.el7.x86_64
+Apr 28 00:09:56 Updated: xfsprogs-4.5.0-19.el7_6.x86_64
+Apr 28 00:09:56 Updated: 1:openssl-1.0.2k-16.el7_6.1.x86_64
+Apr 28 00:09:57 Updated: alsa-lib-1.1.6-2.el7.x86_64
+Apr 28 00:09:57 Updated: libgomp-4.8.5-36.el7_6.1.x86_64
+Apr 28 00:09:57 Updated: iprutils-2.4.16.1-1.el7.x86_64
+Apr 28 00:09:57 Updated: iwl5000-firmware-8.83.5.1_1-69.el7.noarch
+Apr 28 00:09:57 Updated: iwl4965-firmware-228.61.2.24-69.el7.noarch
+Apr 28 00:09:57 Updated: iwl105-firmware-18.168.6.1-69.el7.noarch
+Apr 28 00:09:57 Updated: iwl6000g2a-firmware-17.168.5.3-69.el7.noarch
+Apr 28 00:09:58 Updated: iwl2030-firmware-18.168.6.1-69.el7.noarch
+Apr 28 00:10:00 Updated: iwl7265-firmware-22.0.7.0-69.el7.noarch
+Apr 28 00:10:01 Updated: iwl135-firmware-18.168.6.1-69.el7.noarch
+Apr 28 00:10:01 Updated: iwl6000g2b-firmware-17.168.5.2-69.el7.noarch
+Apr 28 00:10:01 Updated: iwl5150-firmware-8.24.2.2-69.el7.noarch
+Apr 28 00:10:01 Updated: 1:iwl1000-firmware-39.31.5.1-69.el7.noarch
+Apr 28 00:10:01 Updated: iwl2000-firmware-18.168.6.1-69.el7.noarch
+Apr 28 00:10:01 Updated: iwl6000-firmware-9.221.4.1-69.el7.noarch
+Apr 28 00:10:01 Updated: iwl100-firmware-39.31.5.1-69.el7.noarch
+Apr 28 00:10:02 Updated: iwl7260-firmware-22.0.7.0-69.el7.noarch
+Apr 28 00:10:03 Updated: iwl3160-firmware-22.0.7.0-69.el7.noarch
+Apr 28 00:10:03 Updated: iwl3945-firmware-15.32.2.9-69.el7.noarch
+Apr 28 00:10:03 Updated: iwl6050-firmware-41.28.5.1-69.el7.noarch
+Apr 28 01:11:36 Installed: 1:perl-parent-0.225-244.el7.noarch
+Apr 28 01:11:36 Installed: perl-HTTP-Tiny-0.033-3.el7.noarch
+Apr 28 01:11:36 Installed: perl-podlators-2.5.1-3.el7.noarch
+Apr 28 01:11:36 Installed: perl-Pod-Perldoc-3.20-4.el7.noarch
+Apr 28 01:11:36 Installed: 1:perl-Pod-Escapes-1.04-294.el7_6.noarch
+Apr 28 01:11:37 Installed: perl-Encode-2.51-7.el7.x86_64
+Apr 28 01:11:37 Installed: perl-Text-ParseWords-3.29-4.el7.noarch
+Apr 28 01:11:37 Installed: perl-Pod-Usage-1.63-3.el7.noarch
+Apr 28 01:11:38 Installed: 4:perl-libs-5.16.3-294.el7_6.x86_64
+Apr 28 01:11:38 Installed: 4:perl-macros-5.16.3-294.el7_6.x86_64
+Apr 28 01:11:38 Installed: 4:perl-Time-HiRes-1.9725-3.el7.x86_64
+Apr 28 01:11:38 Installed: perl-Exporter-5.68-3.el7.noarch
+Apr 28 01:11:38 Installed: perl-constant-1.27-2.el7.noarch
+Apr 28 01:11:38 Installed: perl-Time-Local-1.2300-2.el7.noarch
+Apr 28 01:11:38 Installed: perl-Socket-2.010-4.el7.x86_64
+Apr 28 01:11:38 Installed: perl-Carp-1.26-244.el7.noarch
+Apr 28 01:11:39 Installed: perl-Storable-2.45-3.el7.x86_64
+Apr 28 01:11:39 Installed: perl-PathTools-3.40-5.el7.x86_64
+Apr 28 01:11:39 Installed: perl-Scalar-List-Utils-1.27-248.el7.x86_64
+Apr 28 01:11:39 Installed: 1:perl-Pod-Simple-3.28-4.el7.noarch
+Apr 28 01:11:39 Installed: perl-File-Temp-0.23.01-3.el7.noarch
+Apr 28 01:11:39 Installed: perl-File-Path-2.09-2.el7.noarch
+Apr 28 01:11:39 Installed: perl-threads-shared-1.43-6.el7.x86_64
+Apr 28 01:11:40 Installed: perl-threads-1.87-4.el7.x86_64
+Apr 28 01:11:40 Installed: perl-Filter-1.49-3.el7.x86_64
+Apr 28 01:11:40 Installed: perl-Getopt-Long-2.40-3.el7.noarch
+Apr 28 01:11:47 Installed: 4:perl-5.16.3-294.el7_6.x86_64
+Apr 28 01:11:47 Installed: 1:perl-Error-0.17020-2.el7.noarch
+Apr 28 01:11:48 Installed: perl-TermReadKey-2.30-20.el7.x86_64
+Apr 28 01:11:49 Installed: rsync-3.1.2-4.el7.x86_64
+Apr 28 01:11:49 Installed: perl-Git-1.8.3.1-20.el7.noarch
+Apr 28 01:11:53 Installed: git-1.8.3.1-20.el7.x86_64
+Apr 28 01:35:41 Installed: wget-1.14-18.el7.x86_64
+Apr 28 01:46:27 Installed: mpfr-3.1.1-4.el7.x86_64
+Apr 28 01:46:27 Installed: libmpc-1.0.1-3.el7.x86_64
+Apr 28 01:46:27 Installed: apr-1.4.8-3.el7_4.1.x86_64
+Apr 28 01:46:28 Installed: libquadmath-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:46:28 Installed: m4-1.4.16-10.el7.x86_64
+Apr 28 01:46:28 Installed: apr-util-1.5.2-6.el7.x86_64
+Apr 28 01:46:28 Installed: unzip-6.0-19.el7.x86_64
+Apr 28 01:46:28 Installed: patch-2.7.1-10.el7_5.x86_64
+Apr 28 01:46:28 Installed: boost-system-1.53.0-27.el7.x86_64
+Apr 28 01:46:28 Installed: perl-Thread-Queue-3.02-2.el7.noarch
+Apr 28 01:46:28 Installed: avahi-libs-0.6.31-19.el7.x86_64
+Apr 28 01:46:28 Installed: zip-3.0-11.el7.x86_64
+Apr 28 01:46:28 Installed: boost-thread-1.53.0-27.el7.x86_64
+Apr 28 01:46:29 Installed: libgfortran-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:46:30 Installed: cpp-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:46:30 Installed: elfutils-0.172-2.el7.x86_64
+Apr 28 01:46:30 Installed: libmodman-2.0.1-8.el7.x86_64
+Apr 28 01:46:30 Installed: libproxy-0.4.11-11.el7.x86_64
+Apr 28 01:46:30 Installed: pakchois-0.4-10.el7.x86_64
+Apr 28 01:46:31 Installed: dwz-0.11-3.el7.x86_64
+Apr 28 01:46:31 Installed: bzip2-1.0.6-13.el7.x86_64
+Apr 28 01:46:31 Installed: boost-date-time-1.53.0-27.el7.x86_64
+Apr 28 01:46:31 Installed: efivar-libs-36-11.el7_6.1.x86_64
+Apr 28 01:46:31 Installed: mokutil-15-2.el7.centos.x86_64
+Apr 28 01:46:31 Installed: perl-XML-Parser-2.41-10.el7.x86_64
+Apr 28 01:46:32 Installed: perl-Data-Dumper-2.145-3.el7.x86_64
+Apr 28 01:46:32 Installed: autoconf-2.69-11.el7.noarch
+Apr 28 01:46:33 Installed: perl-srpm-macros-1-8.el7.noarch
+Apr 28 01:46:33 Installed: redhat-rpm-config-9.1.0-87.el7.centos.noarch
+Apr 28 01:47:25 Installed: kernel-debug-devel-3.10.0-957.10.1.el7.x86_64
+Apr 28 01:47:25 Installed: gettext-common-devel-0.19.8.1-2.el7.noarch
+Apr 28 01:47:26 Installed: gettext-devel-0.19.8.1-2.el7.x86_64
+Apr 28 01:47:26 Installed: gdb-7.6.1-114.el7.x86_64
+Apr 28 01:47:29 Installed: kernel-headers-3.10.0-957.10.1.el7.x86_64
+Apr 28 01:47:30 Installed: glibc-headers-2.17-260.el7_6.4.x86_64
+Apr 28 01:47:30 Installed: glibc-devel-2.17-260.el7_6.4.x86_64
+Apr 28 01:47:33 Installed: gcc-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:47:33 Installed: libquadmath-devel-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:47:36 Installed: systemtap-devel-3.3-3.el7.x86_64
+Apr 28 01:47:36 Installed: perl-Test-Harness-3.28-3.el7.noarch
+Apr 28 01:47:37 Installed: automake-1.13.4-3.el7.noarch
+Apr 28 01:47:37 Installed: nettle-2.7.1-8.el7.x86_64
+Apr 28 01:47:37 Installed: 1:emacs-filesystem-24.3-22.el7.noarch
+Apr 28 01:47:37 Installed: libdwarf-20130207-4.el7.x86_64
+Apr 28 01:47:38 Installed: dyninst-9.3.1-2.el7.x86_64
+Apr 28 01:47:38 Installed: systemtap-runtime-3.3-3.el7.x86_64
+Apr 28 01:47:41 Installed: systemtap-client-3.3-3.el7.x86_64
+Apr 28 01:47:43 Installed: libstdc++-devel-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:47:44 Installed: trousers-0.3.14-2.el7.x86_64
+Apr 28 01:47:44 Installed: gnutls-3.3.29-9.el7_6.x86_64
+Apr 28 01:47:45 Installed: neon-0.30.0-3.el7.x86_64
+Apr 28 01:47:45 Installed: subversion-libs-1.7.14-14.el7.x86_64
+Apr 28 01:47:46 Installed: subversion-1.7.14-14.el7.x86_64
+Apr 28 01:47:48 Installed: gcc-c++-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:47:48 Installed: systemtap-3.3-3.el7.x86_64
+Apr 28 01:47:48 Installed: cscope-15.8-10.el7.x86_64
+Apr 28 01:47:49 Installed: intltool-0.50.2-7.el7.noarch
+Apr 28 01:47:49 Installed: libtool-2.4.2-22.el7_3.x86_64
+Apr 28 01:47:50 Installed: gcc-gfortran-4.8.5-36.el7_6.1.x86_64
+Apr 28 01:47:51 Installed: rpm-build-4.11.3-35.el7.x86_64
+Apr 28 01:47:51 Installed: flex-2.5.37-6.el7.x86_64
+Apr 28 01:47:51 Installed: bison-3.0.4-2.el7.x86_64
+Apr 28 01:47:51 Installed: diffstat-1.57-4.el7.x86_64
+Apr 28 01:47:51 Installed: patchutils-0.3.3-4.el7.x86_64
+Apr 28 01:47:52 Installed: indent-2.2.11-13.el7.x86_64
+Apr 28 01:47:52 Installed: rpm-sign-4.11.3-35.el7.x86_64
+Apr 28 01:47:53 Installed: swig-2.0.10-5.el7.x86_64
+Apr 28 01:47:53 Installed: rcs-5.9.0-5.el7.x86_64
+Apr 28 01:47:57 Installed: 1:doxygen-1.8.5-3.el7.x86_64
+Apr 28 01:47:57 Installed: byacc-1.9.20130304-3.el7.x86_64
+Apr 28 01:47:58 Installed: ctags-5.8-13.el7.x86_64
+Apr 28 01:51:17 Installed: zlib-devel-1.2.7-18.el7.x86_64
+Apr 28 01:51:17 Installed: elfutils-libelf-devel-0.172-2.el7.x86_64
+Apr 28 01:51:17 Installed: binutils-devel-2.27-34.base.el7.x86_64
+Apr 28 01:51:19 Installed: ncurses-devel-5.9-14.20130511.el7_4.x86_64
+Apr 28 01:51:19 Installed: hmaccalc-0.9.13-4.el7.x86_64
+Apr 28 01:57:45 Installed: libcom_err-devel-1.42.9-13.el7.x86_64
+Apr 28 01:57:45 Installed: libsepol-devel-2.5-10.el7.x86_64
+Apr 28 01:57:46 Installed: pcre-devel-8.32-17.el7.x86_64
+Apr 28 01:57:46 Installed: libselinux-devel-2.5-14.1.el7.x86_64
+Apr 28 01:57:46 Installed: libkadm5-1.15.1-37.el7_6.x86_64
+Apr 28 01:57:46 Installed: libverto-devel-0.2.5-4.el7.x86_64
+Apr 28 01:57:46 Installed: keyutils-libs-devel-1.5.8-3.el7.x86_64
+Apr 28 01:57:47 Installed: krb5-devel-1.15.1-37.el7_6.x86_64
+Apr 28 01:57:49 Installed: 1:openssl-devel-1.0.2k-16.el7_6.1.x86_64
+Apr 28 01:57:49 Installed: bc-1.06.95-13.el7.x86_64
